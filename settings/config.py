@@ -1,13 +1,16 @@
 import os
+import json
 from emoji import emojize
 
-TOKEN = ''
+data = json.load(open("/home/alex/Документы/Konder_86_Bot.json", "r"))
+
+TOKEN = data.get("token")
 NAME_DB = 'products.sqlite'
 VERSION = '0.0.1'
 AUTHOR = 'User'
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATABASE = os.path.join('sqlite:///'+BASE_DIR, NAME_DB)
+DATABASE = os.path.join('sqlite:///' + BASE_DIR, NAME_DB)
 COUNT = 0
 
 # кнопки управления:
