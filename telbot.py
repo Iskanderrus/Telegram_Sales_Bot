@@ -4,34 +4,25 @@ from handlers.handler_main import HandlerMain
 
 
 class TelBot:
-    """
-    Основной класс телеграмм бота (сервер), в основе которого
-    используется библиотека pyTelegramBotAPI
-    """
+
     __version__ = config.VERSION
     __author__ = config.AUTHOR
 
     def __init__(self):
-        """
-        Инициализация бота
-        """
-        # получаем токен
+
+        # указываем токен
         self.token = config.TOKEN
         # инициализируем бот на основе зарегистрированного токена
         self.bot = TeleBot(self.token)
-        # инициализируем оброботчик событий
+        # инициализируем обработчик событий
         self.handler = HandlerMain(self.bot)
 
     def start(self):
-        """
-        Метод предназначен для старта обработчика событий
-        """
+
         self.handler.handle()
 
     def run_bot(self):
-        """
-        Метод запускает основные события сервера
-        """
+
         # обработчик событий
         self.start()
         # служит для запуска бота (работа в режиме нон-стоп)
