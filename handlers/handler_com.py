@@ -23,6 +23,5 @@ class HandlerCommands(Handler):
         # который обрабатывает входящие /start команды.
         @self.bot.message_handler(commands=['start'])
         def handle(message):
-            print(message)
             if message.text == '/start':
                 self.pressed_btn_start(message)
