@@ -15,9 +15,9 @@ COUNT = 0
 
 # кнопки управления:
 KEYBOARD = {
-    'CHOOSE_GOODS': emojize(':open_file_folder: Выбрать товар'),
-    'INFO': emojize(':speech_balloon: О магазине'),
-    'SETTINGS': emojize('⚙️ Настройки'),
+    'CHOOSE_GOODS': emojize(':open_file_folder: Полный каталог'),
+    'INFO': emojize(':speech_balloon: О приложении'),
+    'SETTINGS': emojize('⚙️ Инструкция'),
     'SPAREPARTS': emojize(':pizza: Запасные части'),
     'SPLITSYSTEMS': emojize(':bread: Сплит-системы'),
     'SERVICES': emojize(':shaved_ice: Сервис'),
